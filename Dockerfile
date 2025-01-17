@@ -14,6 +14,7 @@ RUN \
     gnupg \
     nano \
     pigz \
+    run-parts \
     s3cmd \
     aws-cli \
     zstd && \
