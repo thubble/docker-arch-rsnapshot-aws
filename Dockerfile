@@ -16,14 +16,11 @@ RUN \
     gnupg \
     nano \
     pigz \
+    s3cmd \
+    aws-cli \
     zstd && \
-  pip3 install -U --no-cache-dir \
-    pip \
-    wheel && \
   pip install --no-cache-dir --ignore-installed \
-    awscli \
-    awsebcli \
-    s3cmd && \
+    awsebcli && \
   echo "**** cleanup ****" && \
   ln -s /usr/lib/gettext/hostname /bin/hostname && \
   ln -s /usr/bin/busybox /usr/sbin/crond && \
