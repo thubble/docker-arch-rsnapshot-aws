@@ -19,7 +19,7 @@ RUN \
     s3cmd \
     aws-cli \
     zstd && \
-  pip install --no-cache-dir --ignore-installed \
+  pip install --no-cache-dir --ignore-installed --break-system-packages \
     awsebcli && \
   echo "**** cleanup ****" && \
   ln -s /usr/lib/gettext/hostname /bin/hostname && \
