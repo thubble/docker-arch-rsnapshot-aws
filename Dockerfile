@@ -8,17 +8,14 @@ FROM ghcr.io/linuxserver/baseimage-arch:latest
 RUN \
   echo "**** install runtime packages ****" && \
   pacman -Sy --noconfirm --needed \
-    busybox \
     openssh \
     rsnapshot \
     rsync \
     python \
     python-pip \
     gnupg \
-    curl \
     nano \
     pigz \
-    tar \
     zstd && \
   pip3 install -U --no-cache-dir \
     pip \
